@@ -1,4 +1,5 @@
 import { 
+    ContainerGitNavBar,
     ContainerItemsMain, 
     ContainerItemsNavBar, 
     ContainerMain, 
@@ -19,7 +20,7 @@ export const Home = () => {
                 
                 <NavBar>
 
-                    <ContainerItemsNavBar>
+                    <ContainerGitNavBar>
 
                         <ItemsNavBar>
                             <VscGithubInverted/>
@@ -29,7 +30,7 @@ export const Home = () => {
                             Vicent92
                         </ItemsNavBar>
 
-                    </ContainerItemsNavBar>
+                    </ContainerGitNavBar>
 
                     <ContainerItemsNavBar>
 

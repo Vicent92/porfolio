@@ -47,6 +47,17 @@ export const ItemsNavBar = styled.div`
     font-size: 20px;
 `
 
+export const ContainerGitNavBar = styled.div`
+    width: 15%;
+    height: 50px;
+    /* background: red; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+`
+
 export const Main = styled.main`
      width: 100%;
     height: 100%;
