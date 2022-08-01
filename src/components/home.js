@@ -1,16 +1,14 @@
 import { 
     ContainerGitNavBar,
-    ContainerItemsMain, 
     ContainerItemsNavBar, 
-    ContainerMain, 
-    IlustracionMain, 
-    ItemsMain, 
+    ContainerMain,
     ItemsNavBar, 
     Main, 
     NavBar 
 } from "../style/homeStyle"
-import  ilustacion from '../assets/working-from-home.png'
 import { VscGithubInverted } from "react-icons/vsc";
+import { Outlet } from "react-router";
+import { LinkGlobal } from "../style/styleGlobal";
 
 export const Home = () => {
     return (
@@ -42,9 +40,13 @@ export const Home = () => {
                             Sobre mi
                         </ItemsNavBar>
 
-                        <ItemsNavBar>
-                            Contacto
-                        </ItemsNavBar>
+                        <LinkGlobal to='contacto'>
+                        
+                            <ItemsNavBar>
+                                Contacto
+                            </ItemsNavBar>
+                        
+                        </LinkGlobal>
 
                     </ContainerItemsNavBar>
 
@@ -52,19 +54,7 @@ export const Home = () => {
 
                 <Main>
 
-                    <ContainerItemsMain>
-
-                        <ItemsMain>
-                            FullStack Developer
-                        </ItemsMain>
-
-                        <ItemsMain>
-                            
-                            <IlustracionMain src={ilustacion}/>
-
-                        </ItemsMain>
-
-                    </ContainerItemsMain>
+                    <Outlet/>
 
                 </Main>
 
