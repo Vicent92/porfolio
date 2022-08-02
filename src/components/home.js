@@ -9,8 +9,12 @@ import {
 import { VscGithubInverted } from "react-icons/vsc";
 import { Outlet } from "react-router";
 import { LinkGlobal } from "../style/styleGlobal";
+import { useContext } from "react";
+import { contexto } from "./context";
 
 export const Home = () => {
+    const { ofRender, onRender } = useContext(contexto)
+
     return (
         <>
         
@@ -18,7 +22,7 @@ export const Home = () => {
                 
                 <NavBar>
 
-                    <ContainerGitNavBar>
+                    <ContainerGitNavBar href="https://github.com/Vicent92">
 
                         <ItemsNavBar>
                             <VscGithubInverted/>
@@ -32,21 +36,33 @@ export const Home = () => {
 
                     <ContainerItemsNavBar>
 
+                        <LinkGlobal to='/'>
+                        
+                            <ItemsNavBar onClick={onRender}>
+                                Home
+                            </ItemsNavBar>
+
+                        </LinkGlobal>
+
                         <ItemsNavBar>
                             Proyectos
                         </ItemsNavBar>
-                            
-                        <ItemsNavBar>
-                            Sobre mi
-                        </ItemsNavBar>
 
+                        <LinkGlobal to='sobremi'>
+                            
+                            <ItemsNavBar onClick={ofRender}>
+                                Sobre mi
+                            </ItemsNavBar>
+
+                        </LinkGlobal>
+                        
                         <LinkGlobal to='contacto'>
                         
-                            <ItemsNavBar>
+                            <ItemsNavBar onClick={ofRender}>
                                 Contacto
                             </ItemsNavBar>
-                        
-                        </LinkGlobal>
+
+                        </LinkGlobal>          
 
                     </ContainerItemsNavBar>
 

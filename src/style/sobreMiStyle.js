@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { fonts } from "../fonts/globalFonts";
 
-export const ContainerContacto = styled.div`
+export const ContainersobreMi = styled.div`
     width: 100%;
     height: 100%;
     /* background: red; */
@@ -11,19 +11,24 @@ export const ContainerContacto = styled.div`
     align-items: center;
 `
 
-export const ContainerTextoContacto = styled.div`
+export const ContainerTextosobreMi = styled.div`
     width: 500px;
     height: 100%;
     /* background: blue; */
+
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 `
 
-export const ItemTextoContacto = styled.div`
+export const ItemTextosobreMi = styled.div`
 @font-face {
     font-family: 'regular';
     src: url(${fonts.textos});
   }
     width: 100%;
-    height: 350px;
+    /* height: 350px; */
     /* background: green; */
     font-size: 25px;
     font-family: 'regular';
@@ -33,7 +38,7 @@ export const ItemTextoContacto = styled.div`
     align-items: center;
 `
 
-export const ContainerImagenContacto = styled.div`
+export const ContainerImagensobreMi = styled.div`
     width: 500px;
     height: 100%;
     /* background: blue; */
@@ -43,9 +48,9 @@ export const ContainerImagenContacto = styled.div`
     align-items: center;
 `
 
-export const ItemImagenContacto = styled.div`
-    width: 300px;
-    height: 300px;
+export const ItemImagensobreMi = styled.img`
+    width: 500px;
+    height: 500px;
     background: black;
     border-radius: 50%;
 `

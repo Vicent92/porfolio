@@ -1,14 +1,19 @@
 import './App.css';
+import { Context } from './components/context';
 import { LayOut } from './components/layOut';
 
 function App() {
   return (
 
-    <div className="App">
+    <Context>
 
-      <LayOut/>
+      <div className="App">
 
-    </div>
+        <LayOut/>
+
+      </div> 
+
+    </Context>
     
   );
 }

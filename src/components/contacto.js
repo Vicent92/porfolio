@@ -1,32 +1,71 @@
-import { ContainerContacto, ContainerImagenContacto, ContainerTextoContacto, ItemImagenContacto, ItemTextoContacto } from "../style/contactoStyle"
+import { 
+    ContainerContacto, 
+    ContainerContacto2, 
+    ContainerIconContacto, 
+    ContainerItemContacto, 
+    ItemIconContacto, 
+    ItemtContenidoContacto, 
+    ItemtTituloContacto 
+} from "../style/contactoStyled"
+import { FaLinkedin } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
+import iconContacto from '../assets/undraw_Personal_text_re_vqj3.png'
 
 export const Contacto = () => {
     return (
-        <>
-        
-            <ContainerContacto>
+        <ContainerContacto>
 
-                <ContainerImagenContacto>
+            <ContainerContacto2>
+            
+                    <ItemtTituloContacto>
+                        Info de Contacto
+                    </ItemtTituloContacto>
 
-                    <ItemImagenContacto/>
+                <ContainerItemContacto>
+            
+                    <ItemtTituloContacto>
+                        Email
+                    </ItemtTituloContacto>
 
-                </ContainerImagenContacto>
+                    <ItemtContenidoContacto>
+                        vicentemillan1992@gmail.com
+                    </ItemtContenidoContacto>
+            
+                </ContainerItemContacto>
 
-                <ContainerTextoContacto>
+                <ContainerItemContacto>
+            
+                    <ItemtTituloContacto>
+                        Celular/WhatSapp
+                    </ItemtTituloContacto>
 
-                    <ItemTextoContacto>
+                    <ItemtContenidoContacto>
+                        +54 1164786787
+                    </ItemtContenidoContacto>
+            
+                </ContainerItemContacto>
 
-                    Soy desarrollador Full Stack, transitando el mundo IT. 
-                    Me siento cómodo trabajando tanto en el Back-end como en el Front-end, 
-                    ya que me gusta mucho la lógica y me gusta sentarme y pensar las cosas hasta que funcionan. 
-                    Cuento con manejo de GIT y metodologías ágiles SCRUM. 
+                <ContainerItemContacto>
+            
+                    <ItemtTituloContacto>
+                        Redes Sociales
+                    </ItemtTituloContacto>
 
-                    </ItemTextoContacto>
+                    <ItemtContenidoContacto>
+                        <FaLinkedin/>
+                        <FaTwitterSquare/>
+                    </ItemtContenidoContacto>
+            
+                </ContainerItemContacto> 
 
-                </ContainerTextoContacto>
+            </ContainerContacto2>
 
-            </ContainerContacto>
-        
-        </>
+            <ContainerIconContacto>
+                
+                {/* <ItemIconContacto src={iconContacto}/> */}
+
+            </ContainerIconContacto> 
+
+        </ContainerContacto>
     )
 }

@@ -26,7 +26,7 @@ export const NavBar = styled.div`
 `
 
 export const ContainerItemsNavBar = styled.div`
-    width: 30%;
+    width: 40%;
     height: 50px;
     /* background: red; */
 
@@ -47,9 +47,10 @@ export const ItemsNavBar = styled.div`
     font-size: 20px;
 `
 
-export const ContainerGitNavBar = styled.div`
+export const ContainerGitNavBar = styled.a`
     width: 15%;
     height: 50px;
+    text-decoration: none;
     /* background: red; */
 
     display: flex;
