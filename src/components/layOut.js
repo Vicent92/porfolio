@@ -11,6 +11,8 @@ import { Contacto } from "./contacto"
 export const LayOut = () => {
     const { render } = useContext(contexto)
 
+    console.log(render)
+
     return  (
         <>
         

@@ -4,7 +4,7 @@ import { useRender } from "../../hooks/useRender"
 const contexto = createContext()
 
 const Context = ({ children }) => {
-    const { render, onRender, ofRender } = useRender(true)
+    const { render, onRender, ofRender } = useRender()
     
     return (
         
