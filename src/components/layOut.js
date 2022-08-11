@@ -7,6 +7,8 @@ import { Home } from "./home"
 import { LangePage } from "./langePage"
 import { Tecnologias } from "./tecnlogias"
 import { Contacto } from "./contacto"
+import { ProyectosHome } from "./proyectosHome"
+import { ProyectosPage } from "./proyectosPage"
 
 export const LayOut = () => {
     const { render } = useContext(contexto)
@@ -22,6 +24,8 @@ export const LayOut = () => {
 
                     <Route path='' element={<LangePage/>}/>
 
+                    <Route path='proyectos' element={<ProyectosPage/>}/>
+
                     <Route path='sobremi' element={<SobreMi/>}/>
 
                     <Route path='contacto' element={<Contacto/>}/>
@@ -30,7 +34,9 @@ export const LayOut = () => {
             
             </Routes>
 
-            {render && <Tecnologias/>}       
+            {render && <Tecnologias/>} 
+
+            {render && <ProyectosHome/>}      
         
         </>
     )

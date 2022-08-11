@@ -3,13 +3,13 @@ import {
     ContainerContacto2, 
     ContainerIconContacto, 
     ContainerItemContacto, 
-    ItemIconContacto, 
+    // ItemIconContacto, 
     ItemtContenidoContacto, 
     ItemtTituloContacto 
 } from "../style/contactoStyled"
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
-import iconContacto from '../assets/undraw_Personal_text_re_vqj3.png'
+import { EnlaceProyectosPage } from "../style/proyectosPageStyle";
 
 export const Contacto = () => {
     return (
@@ -52,8 +52,15 @@ export const Contacto = () => {
                     </ItemtTituloContacto>
 
                     <ItemtContenidoContacto>
-                        <FaLinkedin/>
-                        <FaTwitterSquare/>
+
+                        <EnlaceProyectosPage href='https://www.linkedin.com/in/vicente-millan-4b3536128/' target='_blank'>
+                            <FaLinkedin/>
+                        </EnlaceProyectosPage>
+
+                        <EnlaceProyectosPage href='https://twitter.com/Vicentemillan14' target='_blank'>
+                            <FaTwitterSquare/>
+                        </EnlaceProyectosPage>
+                    
                     </ItemtContenidoContacto>
             
                 </ContainerItemContacto> 

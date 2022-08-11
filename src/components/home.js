@@ -22,7 +22,7 @@ export const Home = () => {
                 
                 <NavBar>
 
-                    <ContainerGitNavBar href="https://github.com/Vicent92">
+                    <ContainerGitNavBar href="https://github.com/Vicent92" target='_blank'>
 
                         <ItemsNavBar>
                             <VscGithubInverted/>
@@ -44,9 +44,13 @@ export const Home = () => {
 
                         </LinkGlobal>
 
-                        <ItemsNavBar>
-                            Proyectos
-                        </ItemsNavBar>
+                        <LinkGlobal to='proyectos'>
+                        
+                            <ItemsNavBar onClick={ofRender}>
+                                Proyectos
+                            </ItemsNavBar>
+                        
+                        </LinkGlobal>
 
                         <LinkGlobal to='sobremi'>
                             
