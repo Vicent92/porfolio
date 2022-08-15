@@ -3,7 +3,7 @@ import { useState } from "react"
 export const useRender = () => {
     const  [render, setRender] = useState(() => {
         const local = localStorage.getItem('render')
-        return JSON.parse(local)
+        return !local ? true : JSON.parse(local)
     })
 
     const onRender = () => {

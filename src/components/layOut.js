@@ -14,6 +14,9 @@ export const LayOut = () => {
     const { render } = useContext(contexto)
 
     console.log(render)
+    if (render) {
+        localStorage.setItem('render', true)
+    }
 
     return  (
         <>
